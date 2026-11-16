@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (only needed for the reveal.js build tools, not for viewing the slides)
+node_modules/
+npm-debug.log*
+
+# Media in assets/ (videos, images, logos) is intentionally NOT ignored:
+# GitHub Pages serves it with the slides.

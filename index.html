@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Endless Ascent: The Shepard Tone in Notation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/lg.beige.v01.css">
+		<link rel="stylesheet" href="dist/theme/plantin-local.css">
+		<link rel="stylesheet" href="dist/theme/velodroma-superwide-wakamaifondue.css">
+		<link rel="stylesheet" href="dist/theme/NeueDINReg-wakamaifondue.css">
+		<link rel="stylesheet" href="dist/theme/ghostly.text.v01.css">
+		<style>
+			/* video frames: full column width, no theme border */
+			.centered-media-slide .video-col video { display: block; width: 100%; height: auto; background: #f7f2d3; border: none; box-shadow: none; }
+			.centered-media-slide .video-col.wide { flex: 0 0 60%; }
+			.centered-media-slide .photo-col { flex: 0 0 32%; }
+			.centered-media-slide .photo-col img { width: 100%; margin: 0; background: none; border: none; box-shadow: none; }
+		</style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<!-- ========================================= -->
+<!--   TITLE   -->
+<!-- ========================================= -->
+
+				<section data-background-color="#f7f2d3">
+					<div id="glitchy-date">
+						<p style="font-size: 1.5em; font-style: oblique;" class="--onum hero glitch layers movement paths" data-text="Endless Ascent: The Shepard Tone in Notation">Endless Ascent: The Shepard Tone in Notation</p>
+						<div><p class="--onum hero glitch layers movement paths" data-text="Building the Shepard illusion from scratch, one voice at a time...">Building the Shepard illusion from scratch, one voice at a time...</p></div>
+						<div><p class="--onum hero glitch layers movement paths" data-text="Dr. Louis Goldford — November 16, 2026">Dr. Louis Goldford — November 16, 2026</p></div>
+					</div>
+					<div id="div-logos" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;">
+						<img src="./assets/logos/uwm-logo-2024.png" alt="uwm-logo" width="130px" style="background:none; border:none; box-shadow:none; margin-right: 1.5dvh;">
+						<img src="./assets/logos/music-department-masthead-crown-logo-cropped.transparent.png" alt="columbia-logo" width="300px" style="background:none; border:none; box-shadow:none; transform: translate(-1dvh, 0);">
+						<img src="./assets/logos/fulbright.france.logo.transparent.png" alt="fulbright-logo" width="100px" style="background:none; border:none; box-shadow:none;">
+						<img src="./assets/logos/ACTOR_logo_colour_fullname.png" alt="actor-logo" width="140px" style="background:none; border:none; box-shadow:none; transform: translate(0, -1dvh);">
+						<img src="./assets/logos/spat.ircam.logo.gif" alt="ircam-logo" width="100px" style="background:none; border:none; box-shadow:none; transform: translate(0, -0.5dvh);">
+					</div>
+				</section>
+
+<!-- ========================================= -->
+<!--   SHEPARD: BIO + SHEPARD TABLES   -->
+<!-- ========================================= -->
+
+				<section>
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>Roger Shepard <em>(1929–2022)</em></h4>
+						</div>
+						<div class="media-row">
+							<div class="photo-col">
+								<img src="./assets/img/roger-shepard.jpg" alt="Roger Shepard at the 2019 SciAPP conference">
+								<p style="font-size: 35%;"><em>source</em>: Wikimedia Commons, “Psychologist Roger Shepard March 2019 ASU SciAPP conference” (HouseOfChange, CC BY-SA 4.0)</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Cognitive scientist at <strong>Stanford University</strong>, known for his work on perception, mental imagery and visual illusions.</li>
+									<li class="fragment">In 1964 he published <a href="https://www.brainmusic.org/MBB91%20Webpage/Pitch_I_Shepard.pdf" target="_blank" rel="noopener"><em>“Circularity in Judgments of Relative Pitch”</em></a>, describing a tone built from many partials spaced an octave apart, where the middle components are loudest, fading to and from silence toward the lowest and highest.</li>
+									<li class="fragment">The overall effect of the composite sonority seems to <strong>rise forever</strong>, yet after twelve steps it seems to be <strong>identical</strong> to where it began.</li>
+									<li class="fragment">This is what we conventionally call a <strong style="color:#4ea1ff;">Shepard tone.</strong> If we use discrete scale steps to articulate this rise in pitch, it may be more aptly described as a <strong style="color:#4ea1ff;">Shepard scale.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>Visual Illusion: Tables</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<img src="./assets/img/shepard-tables.jpg" alt="Two tables drawn in perspective: one looks long and narrow, the other nearly square" style="width:100%; margin:0; background:none; border:none; box-shadow:none;">
+								<p style="font-size: 35%;"><em>source</em>: Wikimedia Commons, “Table shepard.preview” (Nedelina Ksenia, CC BY-SA 4.0), after Roger Shepard, <em>Mind Sights</em> (1990)</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment"><em>Shepard’s Tables”</em>: one tabletop looks long and narrow, but the other nearly square.</li>
+									<li class="fragment">On the page, both tabletops are the <strong>same shape and size</strong>. Measure them!</li>
+									<li class="fragment">The brain reads the drawing as 3D and “corrects” for depth: what we <em>see</em> overrides what is <em>there</em>.</li>
+									<li class="fragment">The Shepard tone does the same for the ear: a sound that <strong>repeats</strong> is heard as <strong style="color:#4ea1ff;">rising forever.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>Shepard’s Tables in Motion</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<div style="position: relative; width:100%; aspect-ratio: 16 / 9;">
+									<iframe
+										class="yt-clean"
+										src="https://www.youtube.com/embed/scTRg5AmBPU?enablejsapi=1&rel=0&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1"
+										title="Shepard tables"
+										style="position: absolute; inset: 0; width:100%; height:100%; max-width:none; max-height:none; border:none;"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+									></iframe>
+								</div>
+								<p style="font-size: 35%;"><em>source</em>: Peter Prevos, “Shepard tables”</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Watch the tabletops <strong>swap places</strong>.</li>
+									<li class="fragment">Moved onto the other table, each top fits it exactly: the shapes were <strong>identical</strong> all along!</li>
+									<!-- <li class="fragment">Even after seeing it, the illusion comes straight back: knowing does not change what we <strong style="color:#4ea1ff;">perceive.</strong></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				</section>
+
+<!-- ========================================= -->
+<!--   RISSET: BIO + MUTATIONS + ETERNAL ACCELERANDO   -->
+<!-- ========================================= -->
+
+				<section>
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>Jean-Claude Risset <em>(1938–2016)</em></h4>
+						</div>
+						<div class="media-row">
+							<div class="photo-col">
+								<img src="./assets/img/jean-claude-risset.jpg" alt="Portrait of composer Jean-Claude Risset">
+								<p style="font-size: 35%;"><em>source</em>: Wikimedia Commons, “Jean-Claude Risset au StuStu (cropped)” (Leedanslabrousse, CC BY-SA 4.0)</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">French composer and pioneer of <strong>computer music</strong>; worked with Max Mathews at <strong>Bell Labs</strong> in the 1960s.</li>
+									<li class="fragment">Turned Shepard’s stepwise tone into a <strong>continuous glissando</strong> that seems to rise (or fall) without end.</li>
+									<li class="fragment">Today we call this the <strong style="color:#4ea1ff;">Shepard–Risset glissando.</strong></li>
+									<li class="fragment">He also built its rhythmic twin: an <em>eternal accelerando</em> that seems to speed up forever.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>Mutations <em>(Risset, 1969)</em></h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<div style="position: relative; width:100%; aspect-ratio: 16 / 9;">
+									<iframe
+										class="yt-clean"
+										src="https://www.youtube.com/embed/u83PZ1NN34s?enablejsapi=1&rel=0&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1&start=328"
+										title="Jean-Claude Risset – Mutations (1969) (Spectrogram)"
+										style="position: absolute; inset: 0; width:100%; height:100%; max-width:none; max-height:none; border:none;"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+									></iframe>
+								</div>
+								<p style="font-size: 35%;"><em>source</em>: monotoniac, “Jean-Claude Risset - Mutations (1969) (Spectrogram)”, from 5:28</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">A computer-generated tape piece, one of the classics of early computer music.</li>
+									<li class="fragment">From <strong>5:28</strong>: Risset’s <strong>endless glissando</strong>.</li>
+									<li class="fragment">In the spectrogram, watch many parallel lines glide upward together, each one fading in and out.</li>
+									<li class="fragment">Listen: can you hear where any one of them <strong>starts</strong> or <strong>stops</strong>?</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>The Eternal Accelerando <em>(Risset Rhythm)</em></h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<div style="position: relative; width:100%; aspect-ratio: 16 / 9;">
+									<iframe
+										class="yt-clean"
+										src="https://www.youtube.com/embed/oQf_tS5WAP4?enablejsapi=1&rel=0&controls=0&disablekb=1&fs=0&iv_load_policy=3&playsinline=1"
+										title="Risset Rhythm"
+										style="position: absolute; inset: 0; width:100%; height:100%; max-width:none; max-height:none; border:none;"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+									></iframe>
+								</div>
+								<p style="font-size: 35%;"><em>source</em>: Matthew Crisp, “Risset Rhythm”</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">The same trick, applied to <strong>tempo</strong> instead of pitch.</li>
+									<li class="fragment">Several layers play the same rhythm, each at <strong>twice the speed</strong> of the one below: tempo “octaves.”</li>
+									<li class="fragment">All the layers speed up together. The fastest fades out as the slowest fades in, so the middle tempos are always loudest.</li>
+									<li class="fragment">The result sounds like a beat that <strong style="color:#4ea1ff;">accelerates forever.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				</section>
+
+<!-- ========================================= -->
+<!--   THE MODEL   -->
+<!-- ========================================= -->
+
+				<section class="--onum">
+					<h4 style="text-align:left;">Acoustic Versions</h4>
+					<div class="regular-text" style="font-size: 65%; text-align:left;">
+						<ul>
+							<li class="fragment">Composers also write Shepard effects for instruments, with <strong>discrete scale steps</strong> instead of glissandi: like the endlessly falling scales in Haas’s <em>in vain</em> (2000).</li>
+							<li class="fragment">I'll provide a model on the next slides: every voice climbs the <strong>same scale</strong>, over the <strong>same range</strong> <em>(C3 to C5)</em>, in the same <strong>period</strong> <em>(10s)</em>.</li>
+							<li class="fragment">Each voice: same <strong>bell-shaped</strong> dynamic curve: <em>niente</em> <strong><em>o</em></strong> <strong>&lt;</strong> <strong><em>ppp</em></strong> <strong>&lt;</strong> <strong><em>ffff</em></strong> <strong>&gt;</strong> <strong><em>ppp</em></strong> <strong>&gt;</strong> <strong><em>o</em></strong>.</li>
+							<li class="fragment">Voices are <strong>staggered</strong>, so at any slice of time (wherever the playhead sits) they are each located at <strong>different heights</strong> with <strong>different dynamics</strong>.</li>
+							<li class="fragment">Loud voices carry the rise in the middle of the range.</li>
+							<li class="fragment">Each voice starts over at <em>niente</em>, so the restart is <strong style="color:#4ea1ff;">never heard.</strong></li>
+						</ul>
+					</div>
+				</section>
+
+<!-- ========================================= -->
+<!--   FUNCTIONAL VOICES   -->
+<!-- ========================================= -->
+
+				<section class="--onum">
+					<h4 style="text-align:left;">Functional Voices</h4>
+					<div class="regular-text" style="font-size: 65%; text-align:left;">
+						<ul>
+							<li class="fragment">Each “voice” in a Shepard tone is a <strong>functional voice</strong>: one strand we <em>hear</em> as a single entity, but not necessarily one player or instrument.</li>
+							<li class="fragment">This idea comes from our Fabien Lévy reading on <em>functional orchestration</em>, asking what an orchestration <strong>does</strong> for perception rather than which instruments it uses.</li>
+							<li class="fragment"><strong>Temporal coupling</strong>: 2 or more instruments written so that they are perceived as <em>“one merged entity along the timeline,”</em> whether by doubling, overlapping, or handing a gesture from one to another.</li>
+							<li class="fragment">So in a score, one functional voice may be <strong style="color:#4ea1ff;">built up from several instruments.</strong></li>
+						</ul>
+						<p class="fragment" style="font-size: 55%;"><em>source</em>: Fabien Lévy, “Functional Orchestration: A Research Field at the Beginning of Its History,” <em>The Oxford Handbook of Orchestration Studies</em>, ch. 8, pp. 225, 229</p>
+					</div>
+				</section>
+
+<!-- ========================================= -->
+<!--   BUILDING IT: THE VIDEOS   -->
+<!-- ========================================= -->
+
+				<section>
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>1. One Voice</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col wide">
+								<video src="./assets/video/01-sampled-chromatic-1-cycle-1-voice.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 1 voice, semitones, 1 cycle</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">A single <strong>functional voice</strong> climbs <strong>chromatically</strong> from C3 toward C5: 24 semitones.</li>
+									<li class="fragment">The whole climb is one <strong>period</strong>: <strong>10 seconds</strong>.</li>
+									<li class="fragment">Its dynamic arc follows the <strong>bell curve</strong>: from <em>niente</em> up to <strong><em>ffff</em></strong> at the halfway point, then back down to <em>niente</em>.</li>
+									<li class="fragment">On its own, it is just a rising scale with a swell. The illusion needs <strong style="color:#4ea1ff;">more voices.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>2. Two Voices</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col wide">
+								<video src="./assets/video/02-sampled-chromatic-1-cycle-2-voices.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 2 voices, semitones, 1 cycle</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">An identical 2nd voice enters <strong>2.5s</strong> later: <strong>25%</strong> of the period <em>(the <span style="color:#43b56f;">green marker</span>)</em>.</li>
+									<!-- <li class="fragment">In these examples, notehead colors serve as a kind of <strong>heatmap</strong> reinforcing the dynamic markings; red hues are softer, while cooler colors are louder.</li> -->
+									<li class="fragment">Both voices are the same distance apart <em>(6 semitones)</em>, but not at the same <strong>dynamic</strong>.</li>
+									<li class="fragment">As the 1st voice fades out near the top, the second is still growing: the ear <em>hands its attention</em> <strong>upward</strong>.</li>
+									<li class="fragment">This <em>hand-off</em> is the basic mechanism of the <strong style="color:#4ea1ff;">blend.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>3. Four Voices</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<video src="./assets/video/03-sampled-chromatic-1-cycle.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 4 voices, semitones, 1 cycle</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Each of 4 identical voices enters every <strong>quarter</strong> of the period: 0, 2.5, 5 and 7.5s.</li>
+									<li class="fragment">The <span style="color:#43b56f;">green markers</span> show each entry’s starting position in the period. Think of the period as a <strong>circle</strong>: 360° is one full period, so 90° = 25% = 2.5s.</li>
+									<li class="fragment">(In our examples, notehead colors serve as a kind of <strong>heatmap</strong> reinforcing the dynamic markings; red hues are softer, while cooler colors are louder.)</li>
+									<li class="fragment">At every moment the 4 voices sit at 4 different pitch heights & dynamics.</li>
+									<li class="fragment">1 voice is always loud while another <em>silently restarts</em>. The rise never stops.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>4. Quarter Tones</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<video src="./assets/video/04-sampled-quarter-tones-1-cycle.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 4 voices, quarter tones, 1 cycle</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Same 4 voices, <strong>10s</strong> period, & dynamics.</li>
+									<li class="fragment">Now in <strong>quarter tones</strong>: 48 steps per climb instead of 24, so each step goes by <strong>twice as fast</strong>.</li>
+									<li class="fragment">Steps are smaller while ascending line gets <strong>smoother</strong>. Rise takes just as long.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>5. Eighth Tones</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<video src="./assets/video/05-sampled-eighth-tones-1-cycle.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 4 voices, 8th tones, 1 cycle</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Now in <strong>eighth tones</strong>: 96 steps per climb, twice as fast again. The period is still <strong>10s</strong>.</li>
+									<li class="fragment">Semitones, quarter tones, then 8th tones: each of these <strong>samples</strong> the same smooth upward curve (rise in pitch) more finely.</li>
+									<li class="fragment">The finer the sampling, the closer the steps come to a true <strong>glissando</strong>.</li>
+									<li class="fragment">So any scale of discrete steps can trace the same gesture of <strong style="color:#4ea1ff;">rise or fall.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>6. A Pentatonic Scale</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<video src="./assets/video/08-pentatonic-1-cycle.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 4 voices, C pentatonic, 1 cycle</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Instead of sampling a chromatic scale, voices climb a <strong>pentatonic scale</strong> on C: <strong>C D E G A</strong>.</li>
+									<li class="fragment">Still 4 voices, same speed and dynamic shape as our semitone version. Fewer notes make each climb (period) shorter.</li>
+									<li class="fragment">The <span style="color:#43b56f;">markers</span> now read 0°, 108°, 180° and 288°: entries are rounded to coincident onsets so all notes line up.</li>
+									<li class="fragment">The illusion still survives: basically, <strong style="color:#4ea1ff;">any scale</strong> can be used.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="centered-media-slide">
+					<div class="regular-text --onum">
+						<div style="padding-bottom: 15px;">
+							<h4>7. Two Cycles</h4>
+						</div>
+						<div class="media-row">
+							<div class="video-col">
+								<video src="./assets/video/09-pentatonic-2-cycles.mp4" controls preload="metadata" playsinline></video>
+								<p style="font-size: 35%;"><em>example</em>: 4 voices, C pentatonic, 2 cycles</p>
+							</div>
+							<div class="quote-col" style="font-size: 55%;">
+								<ul>
+									<li class="fragment">Same texture over <strong>2 cycles</strong>: each voice starts over at the bottom as soon as it reaches the top.</li>
+									<li class="fragment"><strong>Cycles overlap</strong>: while 1 voice restarts, others are mid-climb.</li>
+									<li class="fragment"><span style="color:#43b56f;">Markers</span> appear in the 2nd cycle at each voice’s restart. Without them, restarts are easy to miss: they are silent.</li>
+									<li class="fragment">Cycle after cycle, the result is a <strong style="color:#4ea1ff;">continuous rise.</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				</section>
+
+<!-- ========================================= -->
+<!--   A MODEL, NOT A RECIPE   -->
+<!-- ========================================= -->
+
+				<section class="--onum">
+					<h4 style="text-align:left;">Use This As A Model</h4>
+					<div class="regular-text" style="font-size: 60%; text-align:left;">
+						<ul>
+							<li class="fragment">Our examples show <strong>a model</strong> of a Shepard tone: identical functional voices in the same register, staggered in time, with bell-shaped dynamics.</li>
+							<li class="fragment">There is <strong>no standard way</strong> to make a Shepard tone, electronically or with instruments: Shepard’s octave-spaced partials, Risset’s glissandi and stepwise versions like these are all different solutions to the same perceptual problem.</li>
+							<li class="fragment">Real musicians face <strong>practical limits</strong>: most instruments cannot play a true <em>niente</em>, dynamic range is limited by instrumental registers, and breath, bow length and microtonal tuning all <em>constrain</em> what a score can ask for.</li>
+							<li class="fragment">So when analyzing music that evokes the Shepard effect, ask: <strong style="color:#4ea1ff;">how close does this score come to the model? Where and why does it deviate?</strong></li>
+							<li class="fragment">Useful things to compare: number of functional voices, how each is orchestrated across instrumentnal groupings, how they are staggered, over what register(s), step size or scale, the shape of the dynamics used, and how each restart is hidden or exposed.</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- closing slide: same look as the title slide (styles from #glitchy-date, inlined to avoid a duplicate id) -->
+				<section data-background-color="#f7f2d3">
+					<div style="font-family: plantin, serif; font-size: 0.5em; color: lightslategray;">
+						<!-- .hero is inline-block, so each line gets its own block wrapper to stack -->
+						<div><p style="font-size: 1.5em; font-style: oblique;" class="--onum hero glitch layers movement paths" data-text="Thank You!">Thank You!</p></div>
+						<div><p class="--onum hero glitch layers movement paths" data-text="Endless Ascent: The Shepard Tone in Notation">Questions? Concerns? Complaints?</p></div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<div class="talk-footer" aria-hidden="true">
+			<div class="talk-footer-left">Dr. Louis Goldford</div>
+			<div class="talk-footer-center">Endless Ascent: The Shepard Tone in Notation</div>
+			<div class="talk-footer-right">
+				<span id="footer-slide-number">1/18</span>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+
+		<script>
+			function updateFooterSlideNumber() {
+				// count every slide (vertical ones too) in viewing order, so the last slide reads total/total
+				const current = Reveal.getSlidePastCount() + 1;
+				const total = Reveal.getTotalSlides();
+
+				// plus the position in the stack grid: "5", or "5.2" inside a vertical stack
+				const indices = Reveal.getIndices();
+				const h = indices.h + 1;
+				const v = indices.v > 0 ? `.${indices.v + 1}` : "";
+
+				const el = document.getElementById("footer-slide-number");
+				if (el) {
+				el.textContent = `${current}/${total} · ${h}${v}`;
+				}
+			}
+
+			Reveal.on("ready", updateFooterSlideNumber);
+			Reveal.on("slidechanged", updateFooterSlideNumber);
+
+			// stop any example video when leaving its slide
+			Reveal.on("slidechanged", () => {
+				document.querySelectorAll("video").forEach(v => { v.pause(); v.currentTime = 0; });
+			});
+		</script>
+	</body>
+</html>
